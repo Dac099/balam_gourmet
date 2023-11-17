@@ -9,26 +9,35 @@ import Slider from 'react-slick';
 
 export const Banner = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 200,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
-    accessibility: true,
+    accessibility: false,
     autoplay: true, 
     arrows: false
   };
 
   return (
-    <article
-      className='w-full'
-    >
-      <Slider {...settings}>
-        <img src={image_1} className='max-h-[600px] object-cover rounded-xl'/>
-        <img src={image_2} className='max-h-[600px] object-cover rounded-xl'/>
-        <img src={image_3} className='max-h-[600px] object-cover rounded-xl'/>
-        <img src={image_4} className='max-h-[600px] object-cover rounded-xl'/>
-      </Slider>
+    <article>
+      <section  className='w-full relative'>
+        <div 
+          className='absolute top-0 left-0 z-10 w-full h-full bg-neutral-700/75 flex items-center rounded-xl'
+        >
+          <p
+            className='text-white font-bold text-5xl w-3/4 ml-4 max-sm:text-3xl max-sm:w-full'
+          >
+            De la tierra a tu paladar, <span className='text-indigo-400'>Balam Gourmet</span>, el arte de las salsas mexicanas
+          </p>
+        </div>
+        <Slider {...settings}>
+          <img src={image_1} className='max-h-[600px] object-cover rounded-xl'/>
+          <img src={image_2} className='max-h-[600px] object-cover rounded-xl'/>
+          <img src={image_3} className='max-h-[600px] object-cover rounded-xl'/>
+          <img src={image_4} className='max-h-[600px] object-cover rounded-xl'/>
+        </Slider>
+      </section>
     </article>
   );
 }

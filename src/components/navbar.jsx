@@ -17,7 +17,7 @@ export const NavBar = () => {
   }
 
   return (
-    <>
+    <section className='fixed z-20 bg-white top-0 left-0 w-full px-3'>
       <nav
         className='flex items-center justify-between mb-2'
       >
@@ -69,7 +69,7 @@ export const NavBar = () => {
       <hr />    
 
       <MobileMenu closeMenu={closeMenu} showMenu={showMenu}/>    
-    </>
+    </section>
   );
 }
 
