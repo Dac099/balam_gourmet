@@ -7,15 +7,17 @@ export const App = () => {
   const location = useLocation();
 
   return (
-    <main className="p-3 relative">
+    <main className="relative">
       <NavBar />
 
-      {location.pathname === '/'
-        ? <Home />
-        : <Outlet />
-      }
+      <section className="min-h-screen">
+        {location.pathname === '/'
+          ? <Home />
+          : <Outlet />
+        }
+      </section>
 
-      <Footer/>
+      <Footer />
     </main>
   );
 }

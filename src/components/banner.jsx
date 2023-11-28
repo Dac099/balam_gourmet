@@ -7,7 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 
 
-export const Banner = () => {
+export const Banner = ({images}) => {
+  const backupImages = [image_1, image_2, image_3, image_4];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -32,10 +34,24 @@ export const Banner = () => {
           </p>
         </div>
         <Slider {...settings}>
-          <img src={image_1} className='max-h-[600px] object-cover rounded-xl'/>
-          <img src={image_2} className='max-h-[600px] object-cover rounded-xl'/>
-          <img src={image_3} className='max-h-[600px] object-cover rounded-xl'/>
-          <img src={image_4} className='max-h-[600px] object-cover rounded-xl'/>
+          {images.length > 0 
+            ?
+              images.map(image => (
+                <img 
+                  key={image}
+                  src={image}
+                  className='max-h-[600px] object-cover rounded-xl'
+                />
+              ))
+            :
+              backupImages.map(image => (
+                <img 
+                  key={image}
+                  src={image}
+                  className='max-h-[600px] object-cover rounded-xl'
+                />
+              ))
+          }
         </Slider>
       </section>
     </article>

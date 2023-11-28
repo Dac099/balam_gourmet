@@ -1,4 +1,5 @@
 export const TextAndImage = ({firstImage=true, text, image}) => {
+
   return (
     <article
       className="grid grid-cols-2 max-sm:grid-cols-1 grid-flow-col-dense max-sm:grid-flow-row-dense justify-between place-items-center gap-8 mb-10"
