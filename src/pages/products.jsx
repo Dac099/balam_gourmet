@@ -5,7 +5,7 @@ export const Products = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='h-screen pb-24 pt-16 px-3 relative overflow-y-auto'>
+    <section className='pt-16 px-3 mb-10'>
       <p className='text-center text-3xl font-semibold text-violet-700'>Todos nuestros productos</p>
       <Link 
         className='mb-10 p-2 rounded-md block mt-2 underline underline-offset-4 text-pink-500 hover:bg-pink-200 w-max mx-auto transition-all duration-300'
@@ -20,7 +20,7 @@ export const Products = () => {
         {products.map(product => (
           <article
             key={product.id}
-            className='basis-72 w-80 h-96 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl cursor-pointer'
+            className='basis-72 w-80 h-96 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl cursor-pointer border-2 rounded-lg'
             onClick={() => {
               navigate(`/productos/${product.id}`);
             }}
@@ -32,7 +32,7 @@ export const Products = () => {
             />
 
             <section
-              className='bg-violet-400 h-1/6 px-2 rounded-br-lg rounded-bl-lg grid grid-rows-2 border-2 border-violet-900'
+              className='bg-violet-400 h-1/6 px-2 rounded-br-lg rounded-bl-lg grid grid-rows-2'
             >
               <p className='text-violet-100 font-bold text-xl'>{product.name}</p>
               <p 

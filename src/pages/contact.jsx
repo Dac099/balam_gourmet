@@ -7,7 +7,7 @@ export const Contact = () => {
   const [message, setMessage] = useState('');
   const [purpose, setPurpose] = useState('');
   const containerStyle = 'flex flex-col mb-5';
-  const inputStyle = 'border-2 rounded-lg h-10 pl-3 outline-pink-400';
+  const inputStyle = 'border-2 rounded-lg h-10 pl-3 outline-pink-400 bg-violet-50';
   const labelStyle = 'text-lg font-bold';
 
   const handleSubmit = async(e) => {

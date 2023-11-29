@@ -7,7 +7,7 @@ export const App = () => {
   const location = useLocation();
 
   return (
-    <main className="relative flex flex-col">
+    <main className="bg-violet-100/50">
       <NavBar />
 
       <section className="">

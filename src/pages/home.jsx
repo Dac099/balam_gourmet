@@ -1,5 +1,3 @@
-import mision from '/mision.jpeg';
-import vision from '/vision.jpeg';
 import { Banner } from "../components/banner";
 import { TextAndImage } from "../components/textAndImage";
 import { ProductCard } from '../components/productCard';
@@ -13,7 +11,7 @@ export const Home = () => {
       <section className="min-h-screen pt-9">
         <Banner images={bannerUrls}/>
         <p
-          className="text-center text-xl mt-20"
+          className="text-center text-2xl mt-5"
         >
           En Balam Gourmet nos dedicamos a realizar las mejores salsas mexicanas y acompañamiento para tu negocio o cocina. Nos enfocamos en realizar productos de calidad, llenos de sabor y que despierten tu amor por la cocina.
         </p>
