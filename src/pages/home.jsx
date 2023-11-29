@@ -3,7 +3,6 @@ import vision from '/vision.jpeg';
 import { Banner } from "../components/banner";
 import { TextAndImage } from "../components/textAndImage";
 import { ProductCard } from '../components/productCard';
-import product from '/product.jpeg';
 import { useLoaderData } from 'react-router-dom';
 
 export const Home = () => {
@@ -16,7 +15,7 @@ export const Home = () => {
         <p
           className="text-center text-xl mt-20"
         >
-          En los campos de México, donde el sol acaricia la tierra, nació Balam Gourmet. Sus salsas, como guardianes de la tradición, capturan la esencia del país en cada gota. Cada vaso cuenta la historia de sabores ancestrales.
+          En Balam Gourmet nos dedicamos a realizar las mejores salsas mexicanas y acompañamiento para tu negocio o cocina. Nos enfocamos en realizar productos de calidad, llenos de sabor y que despierten tu amor por la cocina.
         </p>
       </section>
 

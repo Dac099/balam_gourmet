@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export const ProductCard = ({image, text}) => {
+  const navigate = useNavigate();
+
   return (
     <article
       className="border-2 rounded-lg w-1/4 max-sm:w-3/4 hover:border-pink-600 h-96"
+      onClick={() => navigate('/productos')}
     >
       <img 
         src={image} 

@@ -7,10 +7,10 @@ export const App = () => {
   const location = useLocation();
 
   return (
-    <main className="relative">
+    <main className="relative flex flex-col">
       <NavBar />
 
-      <section className="min-h-screen">
+      <section className="">
         {location.pathname === '/'
           ? <Home />
           : <Outlet />
