@@ -31,6 +31,12 @@ export const Contact = () => {
       emailContent, 
       import.meta.env.VITE_EMAIL_API
     );
+
+    alert("Email enviado");
+    setEmail('');
+    setName('');
+    setMessage('');
+    setPurpose('');
   }
 
   return (
