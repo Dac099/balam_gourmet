@@ -10,7 +10,7 @@ export const App = () => {
     <main className="bg-violet-100/50">
       <NavBar />
 
-      <section className="">
+      <section>
         {location.pathname === '/'
           ? <Home />
           : <Outlet />

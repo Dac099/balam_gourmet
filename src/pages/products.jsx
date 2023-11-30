@@ -8,7 +8,7 @@ export const Products = () => {
   const [showRules, setShowRules] = useState(false);
 
   return (
-    <section className='pt-16 px-3 mb-10'>
+    <section className='pt-16 px-3 mb-10 max-w-7xl mx-auto'>
       <p className='text-center text-3xl font-semibold text-violet-700'>Todos nuestros productos</p>
       
       <section className='max-w-xl mx-auto my-2 rounded-md bg-violet-100'>

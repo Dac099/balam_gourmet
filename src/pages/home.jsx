@@ -4,9 +4,7 @@ import { ProductCard } from '../components/productCard';
 import { useLoaderData } from 'react-router-dom';
 
 export const Home = () => {
-  const { bannerUrls, empresaUrls, cards, errors } = useLoaderData();
-
-  console.log(errors)
+  const { bannerUrls, empresaUrls, cards } = useLoaderData();
 
   return (
     <section className='mb-32 p-2'>
@@ -19,7 +17,7 @@ export const Home = () => {
         </p>
       </section>
 
-      <section>
+      <section className="max-w-7xl mx-auto">
         <h2 className="text-center font-bold text-5xl max-sm:text-4xl text-violet-600 mb-10">Lo que somos</h2>
         <TextAndImage
           firstImage={false}
@@ -34,7 +32,7 @@ export const Home = () => {
         />
       </section>
 
-      <section>
+      <section  className="max-w-7xl mx-auto">
         <h2 
           className="text-center font-bold text-5xl max-sm:text-4xl text-violet-600 mb-10"
         >
