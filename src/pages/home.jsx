@@ -4,7 +4,9 @@ import { ProductCard } from '../components/productCard';
 import { useLoaderData } from 'react-router-dom';
 
 export const Home = () => {
-  const { bannerUrls, empresaUrls, cards } = useLoaderData();
+  const { bannerUrls, empresaUrls, cards, errors } = useLoaderData();
+
+  console.log(errors)
 
   return (
     <section className='mb-32 p-2'>
@@ -22,13 +24,13 @@ export const Home = () => {
         <TextAndImage
           firstImage={false}
           text={'En Balam Gourmet, nos dedicamos a crear salsas mexicanas auténticas que despiertan la pasión por la cocina, ofreciendo a nuestros clientes experiencias culinarias únicas y memorables'}
-          image={empresaUrls[0] || mision}
+          image={empresaUrls[0]}
         />
         
         <TextAndImage
           firstImage={true}
           text={'Buscamos ser reconocidos como la elección indiscutible de salsas mexicanas de alta calidad, llevando los auténticos sabores de México a hogares y mesas en todo el mundo'}
-          image={empresaUrls[1] || vision}
+          image={empresaUrls[1]}
         />
       </section>
 
